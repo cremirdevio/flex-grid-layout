@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid grey;
+    height: 70vh;
+    width: 70vh;
+
+    display: grid;
+    /* I want a specific no of column/row with a specific size */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    /* Shortcut for grid-template-rows and grid-template-columns */
+    /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+}
+
+.col {
+    border: 1px solid salmon;
+}
